@@ -1,0 +1,49 @@
+<!--
+    # <datalist>
+
+        - Lista de valores como sugestão a uma tag <input>
+        - Valores sugeridos e não obrgatorios
+        - Usuários poderão selecionar um dos valores, ou colocar um valor diferente da sugestão.
+
+    # list
+
+        - Recebe cmo valor o id de um <datalist> residente no mesmo documento.
+
+
+    # tipos de input suportados
+            
+        - text, search, url, tel, email, date, month, week, time, datetime-local, number, range e color.
+
+        * Valores de datalist que não são compativeis com o tipo do <input. não serão apresentados.
+
+    # Tipos de input não suportados (cnforme especificação)
+
+        - hidden, password, checkbox, radio, file, ou qualquer tipo de button
+
+
+    # User Agent
+
+        Verificar a compatibilidade com o browser https://caniuse.com
+-->
+
+<input type="text" list="objects" placeholder="Escolha um objeto"/>
+
+<datalist id="objects">
+    <option>Pen</option>
+    <option>Pencil</option>
+    <option>Erase</option>
+    <option>Paper</option>
+    <option>Chair</option>
+    <option>Table</option>
+</datalist>
+
+<datalist id="colors">
+    <option>pen</option>
+    <option>#ff0000</option>
+    <option>pen</option>
+    <option>#00ff00</option>
+    <option>pen</option>
+    <option>#65f5f9</option>
+</datalist>
+
+<input type="color" list="colors">
