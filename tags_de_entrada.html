@@ -1,4 +1,4 @@
-<!--
+<!-- <input>
         <input>
             - Um dos mais usados em formularios
             - Aceita os mais divesos tipos de dados
@@ -21,7 +21,7 @@
             - list
                 * Sugere opções contidas em uma <datalist> do mesmo documento
 -->
-<!--
+<!-- password
     <input type="password">
 
         - Colocar uma senha de maneira mais segura
@@ -66,7 +66,7 @@
 </form>
 
 -->
-<!--
+<!-- email
     <input type="email"/>
 
     - Esera que o usuario digite um email
@@ -107,7 +107,7 @@
 
 </form>
 -->
-<!--
+<!-- url
     <input type="url"/>
 
     - Espera que o usuário digite uma url
@@ -136,5 +136,30 @@
         spellcheck="false"
     >
     <button type="submit">Enviar</button>
+</form>
+-->
+<!-- file
+
+        <input type="file"/>
+
+        - Usuário poderá escolher 1 ou mais arquivos para enviar no formulário
+
+        # Atributos
+
+        - value
+            * Contem o arquivo a ser enviado
+        - accept
+            * Descreve que tipos de arquivos serão aceitos
+            * exemplo: .doc, .docx, .pdf, audio/*, image/png, .png
+        - files
+            * A lista de arquivo ou arquivos
+        -multiple
+            * permite o envio de múltiplos arquivos
+
+        # Envio dos arquivos
+        Para envio dos arquivos o formulário deverá utilizar o método POST e o atributo anctype como "multpart/form-data"
+
+<form action="" method="POST" enctype="multipart/form-data">
+    <input type="file">
 </form>
 -->
