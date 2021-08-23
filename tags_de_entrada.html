@@ -107,3 +107,34 @@
 
 </form>
 -->
+<!--
+    <input type="url"/>
+
+    - Espera que o usuário digite uma url
+    - Irá validr se o valor digitado é uma url
+
+    # Atributos
+        - placeholder
+        - readonly/disabled
+        - value
+        - required
+        - min/maxlength
+        - size
+        - list
+        - patern
+            * Uso de expressão regular para validar o campo
+            * Exemplo: o usuário só podera colocar domínios .com.br
+                * pattern=".*\.com\.br.*"
+        - spellcheck
+            *Habilitar a verificação ortográfica para este input
+
+<form action="">
+    <input type="url"
+        placeholder="http://example.com.br"
+        pattern=".*\.com\.br.*"
+        title="Apenas domínios .com.br"
+        spellcheck="false"
+    >
+    <button type="submit">Enviar</button>
+</form>
+-->
