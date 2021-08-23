@@ -18,6 +18,8 @@
             - required (Obrigatorio, quase todos)
             - placeholder (quase todos)
                 * mostra um exemplo de texto a ser digitado no campo
+            - list
+                * Sugere opções contidas em uma <datalist> do mesmo documento
 -->
 <!--
     <input type="password">
@@ -49,7 +51,7 @@
                 *on: permite a sugestão de: new-password ou current-password
                 *off: desabilita a opção de autocompletar
                 * new-password: o navegador poderá sugerir uma nova senha
--->
+
 
 <form action="">
 
@@ -63,3 +65,45 @@
 
 </form>
 
+-->
+<!--
+    <input type="email"/>
+
+    - Esera que o usuario digite um email
+    - Irá validar se o valor digitado é um email
+
+    # Atributos
+
+        - placeholder
+        - readonly/desabled
+        - value
+        - required
+        - minlength/maxlength
+        - size
+        - multiple
+            * Irá receber 1 ou mais emails, separados por virgulas.
+        - pattern
+            * Uso de expressão regular para validar o campo
+            * Exemplo: o usuário só poderá colocar email do domínio discente.ufma.br
+                *pattern =".+@discente\.ufma\.br"
+        - list
+
+<form action="">
+    <datalist id="emailslist">
+        <option>andrei.rbs@discente.ufma.br</option>
+        <option>andreibisso@discente.ufma.br</option>
+        <option>andreibisso@gmail.com</option>
+    </datalist>
+    <input type="email"
+        placeholder="Digite seu email"
+        required
+        multiple
+        size = "15"
+        pattern =".+@discente\.ufma\.br"
+        title="Digite e-mail institucional da ufma"
+        list="emailslist"
+    >
+    <button type="submit">Enviar</button>
+
+</form>
+-->
